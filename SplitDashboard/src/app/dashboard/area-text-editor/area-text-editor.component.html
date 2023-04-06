@@ -1,7 +1,7 @@
 <label>Markdown Editor with preview</label>
 <br>
-<textarea [(ngModel)]="markdownContent" [ngClass]="{'preview-mode': previewMode}" style="width: 100%; height: 70%; display: block;"></textarea>
+<textarea [(ngModel)]="markdownContent" [ngClass]="{ 'editor-small': previewMode }"></textarea>
 <br>
-<button (click)="togglePreview()" style="display: block;">{{ previewMode ? 'open Editor' : 'Preview' }}</button>
+<button (click)="togglePreview()">{{ previewMode ? 'open Editor' : 'show Preview' }}</button>
 
 <div *ngIf="previewMode" [innerHTML]="previewHtml"></div>
