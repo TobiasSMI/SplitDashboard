@@ -1,5 +1,37 @@
-# Created by https://www.toptal.com/developers/gitignore/api/intellij+all,git,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=intellij+all,git,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/git,intellij+all,visualstudiocode,java,angular
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,intellij+all,visualstudiocode,java,angular
+
+### Angular ###
+## Angular ##
+# compiled output
+dist/
+tmp/
+app/**/*.js
+app/**/*.js.map
+
+# dependencies
+node_modules/
+bower_components/
+
+# IDEs and editors
+.idea/
+
+# misc
+.sass-cache/
+connect.lock/
+coverage/
+libpeerconnection.log/
+npm-debug.log
+testem.log
+typings/
+.angular/
+
+# e2e
+e2e/*.js
+e2e/*.map
+
+# System Files
+.DS_Store/
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -104,6 +136,32 @@ fabric.properties
 !.idea/codeStyles
 !.idea/runConfigurations
 
+### Java ###
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+replay_pid*
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -123,4 +181,4 @@ fabric.properties
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/intellij+all,git,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/git,intellij+all,visualstudiocode,java,angular
