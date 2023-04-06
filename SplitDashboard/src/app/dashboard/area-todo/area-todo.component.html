@@ -1,1 +1,15 @@
-<p>area-todo works!</p>
+<label>Todo List</label>
+<div class="todo-list">
+
+  <div class="add-todo">
+    <input type="text" [(ngModel)]="newItem" placeholder="Add a new todo...">
+    <button (click)="addItem()">Add</button>
+  </div>
+<br>
+  <div class="todo-item" *ngFor="let item of todoItems">
+    <input type="checkbox" [(ngModel)]="item.completed">
+    <span [ngClass]="{'completed': item.completed}">{{item.text}}</span>
+    <button (click)="removeItem(item)">delete</button>
+  </div>
+
+</div>
