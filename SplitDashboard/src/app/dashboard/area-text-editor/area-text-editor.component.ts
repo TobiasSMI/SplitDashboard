@@ -8,7 +8,7 @@ import * as showdown from 'showdown';
 })
 
 export class AreaTextEditorComponent {
-  markdownContent: string = '';
+  markdownContent: string = '### press "show preview"';
   previewMode: boolean = false;
   converter = new showdown.Converter();
   previewHtml: string = '';
