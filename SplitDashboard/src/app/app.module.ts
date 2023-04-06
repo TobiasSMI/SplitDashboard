@@ -8,6 +8,7 @@ import { AreaTodoComponent } from './dashboard/area-todo/area-todo.component';
 import { AreaPomodoroComponent } from './dashboard/area-pomodoro/area-pomodoro.component';
 import { AreaMusicComponent } from './dashboard/area-music/area-music.component';
 import { AreaTextEditorComponent } from './dashboard/area-text-editor/area-text-editor.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AreaTextEditorComponent } from './dashboard/area-text-editor/area-text-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

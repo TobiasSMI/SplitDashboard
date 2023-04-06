@@ -1,8 +1,5 @@
-<iframe
-  width="100%"
-  height="100%"
-  [src]="sanitizedUrl"
-  frameborder="0"
-  allow="autoplay; encrypted-media"
-  allowfullscreen
-></iframe>
+<label>Optional: Insert your own playlist -> </label>
+<input type="text" [(ngModel)]="youtubeUrl" (input)="onUrlChange()" placeholder="insert youtube video link"/>
+<br>
+<br>
+<iframe width="80%" height="80%" [src]="sanitizedUrl" frameborder="0" allowfullscreen></iframe>
