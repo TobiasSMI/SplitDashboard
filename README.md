@@ -42,9 +42,13 @@ TODO: Requirements and Getting Started Section need a rework. The current state 
 To run this project, you'll need the following installed on your system:
 - Node.js and npm (Node Package Manager): https://nodejs.org/
 - Java Development Kit (JDK): https://adoptium.net/de/temurin/releases/?version=11
-- Angular CLI: Install it globally by running `npm install -g @angular/cli`
+- [Angular CLI](https://github.com/angular/angular-cli/releases): Install it globally by running 
+```bash
+npm install -g @angular/cli
+```
 - A Java IDE or code editor, such as Eclipse, **IntelliJ IDEA**, or Visual Studio Code
-<br>
+- [Spring Boot](https://spring.io/projects/spring-boot)
+<br> 
 
 ## Getting Started
 ---
