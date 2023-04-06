@@ -19,12 +19,13 @@ A versatile and customizable productivity web app with interchangeable modules, 
 ## Project Description
 ---
 1. Modular web app with four equal-sized sections for productivity-enhancing tools
-2. Customizable and interchangeable modules for various use cases and user preferences
- a) currently planned:
- - pomodoro Timer
- - Music player
- - simple todo list
- - simple markdown area for quick notes
+2. Customizable and interchangeable modules for various use cases and user preferences. Module options planned:
+    - pomodoro Timer
+    - music player
+    - simple todo list
+    - simple markdown area for quick notes
+    - calculator
+    - google search bar
 3. Simple task/note management for efficient organization
 4. Expandability and flexibility for future module options and features
 <br>
