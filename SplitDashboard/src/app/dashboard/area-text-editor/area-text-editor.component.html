@@ -1,19 +1,7 @@
-<p>test of much lines</p>
-<p>area-text-editor works!</p>
-<p>area-text-editor works!</p>
-<p>area-text-editor works!</p>
-<p>area-text-editor works!</p>
-<p>area-text-editor works!</p>
-<p>area-text-editor works!</p>
-<p>area-text-editor works!</p>
-<p>area-text-editor works!</p>
-<p>area-text-editor works!</p>
-<p>area-text-editor works!</p>
-<p>area-text-editor works!</p>
-<p>area-text-editor works!</p>
-<p>area-text-editor works!</p>
-<p>area-text-editor works!</p>
-<p>area-text-editor works!</p>
-<p>area-text-editor works!</p>
-<p>area-text-editor works!</p>
-<p>area-text-editor works!</p>
+<label>Markdown Editor with preview</label>
+<br>
+<textarea [(ngModel)]="markdownContent" [ngClass]="{'preview-mode': previewMode}" style="width: 100%; height: 70%; display: block;"></textarea>
+<br>
+<button (click)="togglePreview()" style="display: block;">{{ previewMode ? 'open Editor' : 'Preview' }}</button>
+
+<div *ngIf="previewMode" [innerHTML]="previewHtml"></div>

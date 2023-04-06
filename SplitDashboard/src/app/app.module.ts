@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MarkdownModule, MarkdownService } from 'ngx-markdown';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,9 +23,14 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MarkdownModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    { provide: MarkdownService, useClass: MarkdownService },
+    { provide: 'Window', useValue: window }
+  ],
   bootstrap: [AppComponent]
-})
-export class AppModule { }
+}) export class AppModule {
+  constructor() {}
+}

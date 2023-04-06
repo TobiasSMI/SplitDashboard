@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "ngx-markdown": "^15.1.2",
+    "showdown": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/showdown": "^2.0.0"
+  }
+}
