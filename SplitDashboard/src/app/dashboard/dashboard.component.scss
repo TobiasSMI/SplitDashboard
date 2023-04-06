@@ -1,0 +1,19 @@
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+  gap: 4px;
+}
+
+.area {
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #dfb2b2;
+  overflow: auto; //allow module scrolling if necessary
+  height: 50vh; //allow module scrolling if necessary
+}
+
+
