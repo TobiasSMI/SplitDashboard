@@ -1,1 +1,14 @@
-<p>area-pomodoro works!</p>
+<div class="pomodoro-container">
+  <div class="pomodoro-timer">
+    <h3>{{ pomodoroTime }}:{{ pomodoroSeconds < 10 ? '0' + pomodoroSeconds : pomodoroSeconds }}</h3>
+    <div class="timer-controls">
+      <button (click)="startTimer()" *ngIf="!timerActive">Play</button>
+      <button (click)="pauseTimer()" *ngIf="timerActive">Pause</button>
+      <button (click)="restartTimer()">Restart</button>
+    </div>
+  </div>
+  <div class="break-timer" *ngIf="!timerActive">
+    <h3>Pausenzeit: {{ breakTime }}:{{ breakSeconds < 10 ? '0' + breakSeconds : breakSeconds }}</h3>
+  </div>
+  <div class="timer-message">{{ isWorking ? message : breakMessage }}</div>
+</div>
